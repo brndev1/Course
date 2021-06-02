@@ -19,8 +19,7 @@ public class Worker {
 	public Worker() {
 	}
 
-	public Worker(String name, WorkerLevel level, double baseSalary, Department department,
-			List<HourContract> contracts) {
+	public Worker(String name, WorkerLevel level, double baseSalary, Department department) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
@@ -82,7 +81,7 @@ public class Worker {
 				sum += c.totalValue();
 			}
 		}
-		return year;
+		return sum;
 	}
 
 }
